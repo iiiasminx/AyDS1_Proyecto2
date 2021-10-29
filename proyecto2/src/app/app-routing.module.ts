@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { InicioComponent } from './components/inicio/inicio.component';
 import { PgeneralComponent } from './components/pgeneral/pgeneral.component';
+import { InfoComponent } from './components/info/info.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   { 
     path: 'biblioteca',
     component: PgeneralComponent
+  },
+  { 
+    path: 'informacion',
+    component: InfoComponent
   }
 ];
 
