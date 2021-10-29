@@ -1,0 +1,28 @@
+<div #asSideBar class="sidebar menu-expanded">
+  <div class="header">
+    <div class="title">&nbsp;</div>
+    <div #asMenuBtn class="menu-btn" (click)="toogleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </div>
+  <div class="profile">
+    <div class="photo">
+      <img [src]="user.photo_location" alt="profile_picture" />
+    </div>
+    <div class="name">
+      <span>NOMBRE DE USUARIO</span>
+    </div>
+  </div>
+  <div class="menu-items">
+    <div class="item">
+      <a *ngFor="let item of menu_list" [routerLink]="item.url">
+        <div class="icon text-center">
+          <i class="fas fa-{{ item.icon_name }}"></i>
+        </div>
+        <div class="item-title">
+          <span>{{ item.text }}</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

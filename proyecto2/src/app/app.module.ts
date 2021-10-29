@@ -13,6 +13,12 @@ import { ResolucionesComponent } from './components/resoluciones/resoluciones.co
 import { InnovacionesComponent } from './components/innovaciones/innovaciones.component';
 import { CasosComponent } from './components/casos/casos.component'
 
+
+
+/**Admionistracion */
+import { SweetAlert2Module } from "@sweetalert2/ngx-sweetalert2";
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +32,8 @@ import { CasosComponent } from './components/casos/casos.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    SweetAlert2Module.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
