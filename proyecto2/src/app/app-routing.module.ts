@@ -9,6 +9,7 @@ import { PgeneralComponent } from './components/pgeneral/pgeneral.component';
 import { CasosComponent } from './components/casos/casos.component';
 import { InnovacionesComponent } from './components/innovaciones/innovaciones.component';
 import { ResolucionesComponent } from './components/resoluciones/resoluciones.component';
+import { InfoComponent } from './components/info/info.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
     path: 'biblioteca/Casos',
     component: CasosComponent
   },
+  {
+    path: 'informacion',
+    component: InfoComponent
+  }
 ];
 
 @NgModule({
