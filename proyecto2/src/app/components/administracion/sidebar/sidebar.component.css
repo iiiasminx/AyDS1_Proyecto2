@@ -1,0 +1,171 @@
+.sidebar {
+  background-color: #f8f9fa;
+  color: #808080;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.sidebar a {
+  color: #808080;
+  text-decoration: none;
+}
+
+.sidebar .header {
+  box-sizing: border-box;
+  /* border-bottom: solid 1px black; */
+  /* background-color: #d7dde0; */
+}
+
+.sidebar .header .title {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sidebar .header .title,
+.sidebar .header .menu-btn {
+  vertical-align: middle;
+}
+
+.sidebar .header .menu-btn {
+  display: inline-block;
+}
+
+.sidebar .header .menu-btn {
+  cursor: pointer;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.sidebar .header .menu-btn:hover {
+  background-color: #179cbc;
+}
+
+/*PROFILE */
+.sidebar .profile {
+  border-bottom: solid 1px black;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.sidebar .profile .photo {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.sidebar .profile .photo img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.sidebar .profile .photo,
+.sidebar .profile .name {
+  font-size: 24px;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.sidebar .header {
+  box-sizing: border-box;
+  border-bottom: solid 1px #ffffff;
+}
+
+.sidebar .header .title {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sidebar .header .title,
+.sidebar .header .menu-btn {
+  vertical-align: middle;
+}
+
+.sidebar .header .menu-btn {
+  display: inline-block;
+}
+
+.sidebar .menu-items {
+  overflow: hidden;
+}
+
+.sidebar .menu-items .item {
+  width: 300px;
+}
+
+.sidebar .menu-items .item .icon,
+.sidebar .menu-items .item .item-title {
+  font-size: 14px;
+  vertical-align: middle;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.sidebar .menu-items .item a {
+  display: block;
+}
+
+.sidebar .menu-items .item a:hover {
+  background-color: #179cbc;
+  color: white;
+}
+
+.sidebar .menu-items .item .icon {
+  box-sizing: border-box;
+  padding: 10px; /*verificar valor padding*/
+  width: 50px; /*verificar valor widdth collapsed*/
+}
+
+.sidebar .menu-items .item .icon i {
+  width: 100%;
+}
+
+.sidebar .menu-items .item .item-title {
+  padding: 10px 0; /*verificar valor padding*/
+}
+
+.menu-expanded {
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu-expanded .header .title {
+  display: inline-block;
+  width: calc(100% - 50px);
+  margin-right: -5px;
+  padding: 10px;
+}
+
+.menu-expanded .header .title span {
+  width: calc(250px - 50px - 5px);
+  overflow: hidden;
+  display: inline-block;
+}
+
+.menu-expanded .profile .photo {
+  width: 200px;
+}
+
+.menu-expanded .profile .name {
+  width: 100%;
+}
+
+.menu-collapsed {
+  width: 50px;
+}
+
+.menu-collapsed .header .title {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-collapsed .profile .name {
+  display: none;
+}
+
+.menu-collapsed .item {
+  width: 100px;
+}
