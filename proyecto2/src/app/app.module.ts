@@ -8,6 +8,10 @@ import { PgeneralComponent } from './components/pgeneral/pgeneral.component';
 
 import { FormsModule } from '@angular/forms';
 import { NavComponent } from './components/nav/nav.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ResolucionesComponent } from './components/resoluciones/resoluciones.component';
+import { InnovacionesComponent } from './components/innovaciones/innovaciones.component';
+import { CasosComponent } from './components/casos/casos.component'
 
 @NgModule({
   declarations: [
@@ -15,6 +19,9 @@ import { NavComponent } from './components/nav/nav.component';
     InicioComponent,
     PgeneralComponent,
     NavComponent,
+    ResolucionesComponent,
+    InnovacionesComponent,
+    CasosComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,9 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { InicioComponent } from './components/inicio/inicio.component';
 import { PgeneralComponent } from './components/pgeneral/pgeneral.component';
+import { CasosComponent } from './components/casos/casos.component';
+import { InnovacionesComponent } from './components/innovaciones/innovaciones.component';
+import { ResolucionesComponent } from './components/resoluciones/resoluciones.component';
 
 const routes: Routes = [
   {
@@ -21,7 +24,19 @@ const routes: Routes = [
   { 
     path: 'biblioteca',
     component: PgeneralComponent
-  }
+  },
+  { 
+    path: 'biblioteca/Resoluciones',
+    component: ResolucionesComponent
+  },
+  { 
+    path: 'biblioteca/Innovaciones',
+    component: InnovacionesComponent
+  },
+  { 
+    path: 'biblioteca/Casos',
+    component: CasosComponent
+  },
 ];
 
 @NgModule({
