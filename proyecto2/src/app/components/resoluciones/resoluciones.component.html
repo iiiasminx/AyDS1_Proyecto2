@@ -1,0 +1,78 @@
+<div class="wrapper">
+
+    <div class="sidebar">
+        <a class="active">Búsqueda avanzada</a>
+
+        <div>
+
+
+            <div class="form-group">
+                <label for="exampleSelect1" class="form-label mt-4">Expediente : . . </label>
+                <select [(ngModel)]="miexp">
+                    <option *ngFor="let o of expedientes">
+                       {{o.name}}
+                    </option>
+                 </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" class="form-label mt-4">Materia : . . </label>
+                <select [(ngModel)]="mimateria">
+                    <option *ngFor="let o of materias">
+                       {{o.name}}
+                    </option>
+                 </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" class="form-label mt-4">Departamento : . . </label>
+                <select [(ngModel)]="midepto">
+                    <option *ngFor="let o of deptos">
+                       {{o.name}}
+                    </option>
+                 </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" class="form-label mt-4">Magistrado : . . </label>
+                <select [(ngModel)]="mimagistrado">
+                    <option *ngFor="let o of magistrados">
+                       {{o.name}}
+                    </option>
+                 </select>
+            </div>
+
+            <button (click)="probando()">Buscar</button>
+        </div>
+
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <h1>Resoluciones</h1>
+        <br />
+        <p>Estos son algunos de las últimas resoluciones publicadas. Para encontrar más, pruebe nuestra búsqueda
+            avanzada.
+        </p>
+
+        <div class="col-md-14" *ngFor="let producto of resoluciones">
+
+            <div class="card text-center">
+                <div class="card-header bg-dark text-white d-flex justify-content-between align-items-center">
+                    Exp - {{producto.expediente }}
+                </div>
+                <div class="card-body">
+                    
+                    <p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <span class="badge bg-secondary">{{producto.depto}}</span>
+                    <span class="badge bg-secondary">{{producto.materia}}</span>
+                    <span class="badge bg-secondary">{{producto.magistrado}}</span>
+                    <a class="btn btn-info btn-block">
+                        Descargar PDF
+                    </a>
+                </div>
+            </div>
+            <br/>
+        </div>
+
+    </div>
