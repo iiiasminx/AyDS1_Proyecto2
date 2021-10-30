@@ -1,0 +1,94 @@
+<div class="wrapper">
+
+    <div class="sidebar">
+        <a class="active">Búsqueda avanzada</a>
+
+        <div>
+            <div class="form-group">
+                <label for="exampleSelect1" class="form-label mt-4">Expediente : . . </label>
+                <select [(ngModel)]="miexp">
+                    <option *ngFor="let o of expedientes">
+                       {{o.name}}
+                    </option>
+                 </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" class="form-label mt-4">Materia : . . </label>
+                <select [(ngModel)]="mimateria">
+                    <option *ngFor="let o of materias">
+                       {{o.name}}
+                    </option>
+                 </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" class="form-label mt-4">Departamento : . . </label>
+                <select [(ngModel)]="midepto">
+                    <option *ngFor="let o of deptos">
+                       {{o.name}}
+                    </option>
+                 </select>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1" class="form-label mt-4">Magistrado : . . </label>
+                <select [(ngModel)]="mimagistrado">
+                    <option *ngFor="let o of magistrados">
+                       {{o.name}}
+                    </option>
+                 </select>
+            </div>
+
+            <button (click)="probando()">Buscar</button>
+        </div>
+
+    </div>
+
+    <!-- Page Content -->
+    <div class="content">
+        <h1>Casos Activos</h1>
+        <br />
+        <p>Estos son algunos de las últimos casos activos. Para encontrar más, pruebe nuestra búsqueda
+            avanzada.
+        </p>
+
+        <table class="table table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col" class="text-white">Expediente</th>
+                    <th scope="col" class="text-white">Descripcion</th>
+                    <th scope="col" class="text-white">Tags</th>
+                    <th scope="col" class="text-white">Acción</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let producto of resoluciones">
+                <tr>
+                    <td>
+                        <div class="des">
+                            <p>Exp - {{producto.expediente}}</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="des">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid cum esse minima ad excepturi sint atque quis? Impedit nobis deserunt excepturi dignissimos ratione fugit, illo quibusdam ab rem nulla ut.</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="des">
+                            <span class="badge bg-secondary">{{producto.depto}}</span>
+                            <span class="badge bg-secondary">{{producto.materia}}</span>
+                            <span class="badge bg-secondary">{{producto.magistrado}}</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="des">
+                            <a class="btn btn-info">Ver</a>
+                            <a class="btn btn-success">Descargar</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
