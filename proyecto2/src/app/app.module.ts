@@ -22,6 +22,7 @@ import { ResueltosComponent } from './components/resueltos/resueltos.component';
 /**Admionistracion */
 import { SweetAlert2Module } from "@sweetalert2/ngx-sweetalert2";
 import { AbstractJsEmitterVisitor } from '@angular/compiler/src/output/abstract_js_emitter';
+import { RecuperarComponent } from './components/recuperar/recuperar.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { AbstractJsEmitterVisitor } from '@angular/compiler/src/output/abstract_
     ResueltosComponent,
     MagistradoComponent,
     ActivosComponent,
-    ArchivadosComponent
+    ArchivadosComponent,
+    RecuperarComponent
   ],
   imports: [
     BrowserModule,

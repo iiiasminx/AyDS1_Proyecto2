@@ -15,6 +15,7 @@ import { ActivosComponent } from './components/activos/activos.component';
 import { ArchivadosComponent } from './components/archivados/archivados.component';
 import { MagistradoComponent } from './components/magistrado/magistrado.component';
 import { ResueltosComponent } from './components/resueltos/resueltos.component';
+import { RecuperarComponent } from './components/recuperar/recuperar.component';
 
 const routes: Routes = [
   {
@@ -72,6 +73,11 @@ const routes: Routes = [
       import("./components/administracion/administracion.module").then((m) => m.AdministracionModule),
 
   },
+  {
+    path: 'recuperar',
+    component: RecuperarComponent
+  }
+  
 ];
 
 @NgModule({
