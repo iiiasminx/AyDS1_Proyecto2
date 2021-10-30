@@ -11,6 +11,10 @@ import { InnovacionesComponent } from './components/innovaciones/innovaciones.co
 import { ResolucionesComponent } from './components/resoluciones/resoluciones.component';
 import { InfoComponent } from './components/info/info.component';
 import { AdminLayoutComponent } from './components/administracion/admin-layout/admin-layout.component';
+import { ActivosComponent } from './components/activos/activos.component';
+import { ArchivadosComponent } from './components/archivados/archivados.component';
+import { MagistradoComponent } from './components/magistrado/magistrado.component';
+import { ResueltosComponent } from './components/resueltos/resueltos.component';
 
 const routes: Routes = [
   {
@@ -42,6 +46,22 @@ const routes: Routes = [
   {
     path: 'informacion',
     component: InfoComponent
+  },
+  {
+    path: 'magistrado',
+    component: MagistradoComponent
+  },  
+  {
+    path: 'magistrado/archivados',
+    component: ArchivadosComponent
+  },
+  {
+    path: 'magistrado/activos',
+    component: ActivosComponent
+  },  
+  {
+    path: 'magistrado/resoluciones',
+    component: ResueltosComponent
   },
 
   /***********************Administracion     */
