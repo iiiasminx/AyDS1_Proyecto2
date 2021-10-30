@@ -11,6 +11,7 @@ import { InnovacionesComponent } from './components/innovaciones/innovaciones.co
 import { ResolucionesComponent } from './components/resoluciones/resoluciones.component';
 import { InfoComponent } from './components/info/info.component';
 import { AdminLayoutComponent } from './components/administracion/admin-layout/admin-layout.component';
+import { CatGeneralComponent } from './components/catalogos/cat-general/cat-general.component';
 
 const routes: Routes = [
   {
@@ -51,6 +52,10 @@ const routes: Routes = [
     loadChildren: () =>
       import("./components/administracion/administracion.module").then((m) => m.AdministracionModule),
 
+  },
+  {
+    path: 'catalogos',
+    component: CatGeneralComponent
   },
 ];
 
